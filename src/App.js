@@ -3,7 +3,7 @@ import { Box, Typography, Grid, Paper, IconButton } from "@mui/material";
 import { FaWhatsapp } from "react-icons/fa";
 import kaiqueFoto from './kaique_foto.jpg'
 
-const whatsappNumber = '5535984280547';
+const whatsappNumber = '553599705297';
 
 function App() {
   return (
