@@ -1,16 +1,16 @@
 {
   "files": {
     "main.css": "/site.kaique/static/css/main.e6c13ad2.css",
-    "main.js": "/site.kaique/static/js/main.6f15a0ed.js",
+    "main.js": "/site.kaique/static/js/main.b425a266.js",
     "static/js/453.29c2c141.chunk.js": "/site.kaique/static/js/453.29c2c141.chunk.js",
     "static/media/kaique_foto.jpg": "/site.kaique/static/media/kaique_foto.166cdb34e40079ab0099.jpg",
     "index.html": "/site.kaique/index.html",
     "main.e6c13ad2.css.map": "/site.kaique/static/css/main.e6c13ad2.css.map",
-    "main.6f15a0ed.js.map": "/site.kaique/static/js/main.6f15a0ed.js.map",
+    "main.b425a266.js.map": "/site.kaique/static/js/main.b425a266.js.map",
     "453.29c2c141.chunk.js.map": "/site.kaique/static/js/453.29c2c141.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.e6c13ad2.css",
-    "static/js/main.6f15a0ed.js"
+    "static/js/main.b425a266.js"
   ]
 }
