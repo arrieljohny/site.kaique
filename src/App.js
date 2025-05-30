@@ -33,7 +33,7 @@ function App() {
               Dr. Kaique Arriel
             </Typography>
             <Typography variant="subtitle1">
-              Dermatologia Clínica, Estética e Cirúrgica
+              Dermatologia Clínica, Estética e Cirúrgica.
             </Typography>
           </Box>
         </Box>
