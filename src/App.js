@@ -7,7 +7,7 @@ const whatsappNumber = '553599705297';
 
 function App() {
   return (
-    <Box sx={{ minHeight: "100vh", bgcolor: "white", color: "text.primary", display: "flex", flexDirection: "column" }}>
+    <Box sx={{ minHeight: "100vh", bgcolor: "primary.dark", color: "text.primary", display: "flex", flexDirection: "column" }}>
       <Box
         sx={{
           minHeight: "100vh",
@@ -21,18 +21,20 @@ function App() {
         <Box
           component="header"
           sx={{
-            bgcolor: "primary.dark",
+            bgcolor: "background.dark",
             color: "white",
             py: 2,
             px: 2,
             boxShadow: 2,
+            display: "flex",
           }}
         >
-          <Box maxWidth="1200px" mx="auto">
-            <Typography variant="h4" fontWeight="bold">
+          <Box flex={1} display="flex" flexDirection="column"></Box>
+          <Box flex={11} mx="auto">
+            <Typography variant="h4" fontWeight="bold" color="text.dark">
               Dr. Kaique Arriel
             </Typography>
-            <Typography variant="subtitle1">
+            <Typography variant="subtitle1" color="text.dark">
               Dermatologia Clínica, Estética e Cirúrgica.
             </Typography>
           </Box>
@@ -42,11 +44,11 @@ function App() {
         <Box
           component="main"
           sx={{
+            bgcolor: "background.dark",
             flex: 1,
-            maxWidth: "1200px",
-            mx: "auto",
             px: 2,
             py: 4,
+            width: "100%",
             display: "flex",
             flexDirection: { xs: "column", md: "row" },
             gap: 4,
@@ -54,6 +56,10 @@ function App() {
         >
           <Box
             sx={{
+              //maxWidth: "1200px",
+              mx: "auto",
+              flexDirection: { xs: "column", md: "row" },
+              gap: 4,
               flex: 1,
               display: "flex",
               alignItems: "center",     // centraliza verticalmente
@@ -61,12 +67,12 @@ function App() {
             }}
           >
 
-
-            <Box>
-              <Typography variant="h3" fontWeight="600" gutterBottom>
+            <Box flex={1} display="flex" flexDirection="column"></Box>
+            <Box flex={2} display="flex" flexDirection="column">
+              <Typography variant="h3" color="text.dark" fontWeight="600" gutterBottom>
                 Cuidado com a sua pele em boas mãos
               </Typography>
-              <Typography variant="body1" color="text.secondary" mb={3}>
+              <Typography variant="body1" color="text.dark" mb={3}>
                 Atendimento personalizado com excelência em dermatologia.
               </Typography>
 
@@ -76,7 +82,7 @@ function App() {
                     display: "flex",
                     alignItems: "center",
                     gap: 2,
-                    bgcolor: "primary.dark",
+                    bgcolor: "background.dark",
                     color: "white",
                     px: 3,
                     py: 1.5,
@@ -99,42 +105,38 @@ function App() {
                   </Typography>
                 </Box>
               </Box>
-
             </Box>
 
 
+            <Box flex={2} display="flex" justifyContent="center" alignItems="center">
+              <Box
+                component="img"
+                src={kaiqueFoto}
+                alt="Dr. Kaique Arriel"
+                sx={{
+                  borderRadius: 2,
+                  boxShadow: 3,
+                  maxWidth: 300,
+                  height: "auto",
+                }}
+              />
+            </Box>
 
 
-          </Box>
-
-
-          <Box flex={1} display="flex" justifyContent="center" alignItems="center">
-            <Box
-              component="img"
-              src={kaiqueFoto}
-              alt="Dr. Kaique Arriel"
-              sx={{
-                borderRadius: 2,
-                boxShadow: 3,
-                maxWidth: 300,
-                width: "100%",
-                height: "auto",
-              }}
-            />
           </Box>
         </Box>
 
         {/* SERVIÇOS */}
         <Box
           sx={{
-            maxWidth: "1200px",
-            mx: "auto",
+            bgcolor: "background.dark",
             px: 2,
             py: 4,
+            width: "100%",
           }}
         >
-          <Grid container spacing={3}>
-            <Grid item xs={12} md={2} sx={{ maxWidth: "350px", mx: "auto" }}>
+          <Grid container display="flex" justifyContent={'center'} spacing={3} >
+            <Grid item xs={12} sx={{ width: "320px" }}>
               <Paper
                 elevation={1}
                 sx={{ p: 3, borderRadius: 2, bgcolor: "background.paper" }}
@@ -148,7 +150,7 @@ function App() {
               </Paper>
             </Grid>
 
-            <Grid item xs={12} md={2} sx={{ maxWidth: "350px", mx: "auto" }}>
+            <Grid item xs={12} sx={{ width: "320px" }}>
               <Paper
                 elevation={1}
                 sx={{ p: 3, borderRadius: 2, bgcolor: "background.paper" }}
@@ -162,7 +164,7 @@ function App() {
               </Paper>
             </Grid>
 
-            <Grid item xs={12} md={2} sx={{ maxWidth: "350px", mx: "auto" }}>
+            <Grid item xs={12} sx={{ width: "320px" }}>
               <Paper
                 elevation={1}
                 sx={{ p: 3, borderRadius: 2, bgcolor: "background.paper" }}
@@ -182,8 +184,8 @@ function App() {
         <Box
           component="footer"
           sx={{
-            bgcolor: "primary.dark",
-            color: "white",
+            bgcolor: "background.dark",
+            color: "text.dark",
             textAlign: "center",
             py: 2,
             fontSize: "0.875rem",

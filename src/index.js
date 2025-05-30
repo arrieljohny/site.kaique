@@ -6,9 +6,7 @@ import reportWebVitals from './reportWebVitals';
 
 import { ThemeProvider, createTheme } from '@mui/material/styles';
 import CssBaseline from '@mui/material/CssBaseline';
-
-// Cria um tema customizado (ou use só `createTheme()` para o padrão)
-const theme = createTheme();
+import theme from './theme';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
